@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Bellota", system-ui;
-}
+} 
 body{
     background-color: #fff6e8;
 }
@@ -165,4 +165,18 @@ footer{
  }
  .rodape{
       font-family: "Julius Sans One", sans-serif;
+      text-align: center;
+ }
+
+
+
+
+
+
+
+ /*MEDIA*/
+ @media screen and(max-width: 600px){
+    .banner{
+        aspect-ratio: 2.0;
+    }
  }
