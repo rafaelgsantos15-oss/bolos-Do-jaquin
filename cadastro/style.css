@@ -6,9 +6,9 @@
 }
 
 :root {
-  --corPrincipal: #ffd188;
+  --corPrincipal: #FFD188;
   --arredondamento: 10px;
-  --sobra:0 4px 4px 2px #00000025;
+  --sombra: 0 4px 4px 2px #00000025;
 }
 
 body {
@@ -147,7 +147,7 @@ header {
 .box_cadastro input[type="text"],
 .box_cadastro textarea {
   border-radius: 10px;
-  border: solid 1px --corPrincipal;
+  border: solid 1px #B3B3B3;
   font-size: 18px;
   padding: 0 5px;
 }
@@ -214,6 +214,7 @@ input[type="file"] {
 
 /* LISTA */
 table {
+  /* background-color: aquamarine; */
   width: 90%;
   max-width: 1200px;
   text-align: center;
@@ -227,31 +228,36 @@ th {
 }
 
 td {
-  padding-top: 10px 5px 0 3px;
+  padding: 10px 3px 5px 3px;
   border-bottom: solid 2px #B3B3B350;
 }
-
 
 table svg {
   width: 30px;
   cursor: pointer;
 }
 
- /*rodape*/
- footer{
-    background-color: #ffd188;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Julius Sans One", sans-serif;
- }
 
- footer p{
-  font-family: "julius sants one", sans-serif;
+
+
+
+/* RODAPE */
+footer{
+  width: 100%;
+  height: 60px;
+  background-color: #FFD188;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  font-family: "Julius Sans One", sans-serif;
   text-align: center;
- }
+}
+
+
+
 
 
 /* MEDIA */
@@ -276,11 +282,11 @@ table svg {
   }
 
   /* LISTA */
-  table{
-   text-align: left;
-   max-width: 460px;
+  table {
+    text-align: left;
+    max-width: 460px;
   }
-   
+
   thead {
     display: none;
   }
@@ -292,22 +298,20 @@ table svg {
     background-color: #ffffff;
     border-radius: var(--arredondamento);
     border: solid 1px var(--corPrincipal);
-    box-shadow: var(--sobra)
+    box-shadow: var(--sombra);
   }
 
-  td{
+  td {
     border-bottom: none;
   }
 
-   td::before{
-    content: attr(data-cell) ;
+  td::before {
+    content: attr(data-cell);
     font-weight: 600;
     border-bottom: solid 2px #B3B3B350;
-    
-   }
+  }
 
-   td:last-child{
+  td:last-child {
     align-self: flex-end;
-   }
-
+  }
 }
